@@ -63,7 +63,7 @@ public class Main_20190305 {
 		}
 	}
 	
-	public int[] resolve(int[][] dis,int[] list,List<Integer> list_index,int k){
+	public int[] resolve(int[][] dis,List<Integer> list_index,int k){
 		int len=dis.length;
 		int[] res=new int[len];
 		for(int i=0;i<len;i++){
@@ -136,7 +136,7 @@ public class Main_20190305 {
 		}
 		
 		int[][] dis=obj.solve(map,nodes,list_index);
-		int[] res=obj.resolve(dis, list, list_index, k);
+		int[] res=obj.resolve(dis, list_index, k);
 		for(int i=0;i<n;i++){
 			System.out.println(res[i]);
 		}
