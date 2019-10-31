@@ -75,6 +75,7 @@ public class Main_20190904 {
 				int num5=scan.nextInt();
 				int ss=label[num4][num5];
 				obj.delete_good(goods_list, num4, num5, ss);
+				label[num4][num5]=0;
 				break;
 			case 3:
 				break;
